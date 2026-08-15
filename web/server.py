@@ -4,6 +4,9 @@ from flask import Flask, render_template, request, jsonify, send_from_directory
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
+# 2. ТУК ДОБАВЯШ КОДА ЗА SECRET_KEY:
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default-fallback-key')
+
 # Временна база данни за клиенти (може да ползваш SQLite/PostgreSQL)
 CLIENTS_DB = {}
 
