@@ -12,6 +12,7 @@
         .btn-primary-custom { background-color: #2563eb; border: none; padding: 12px 28px; font-weight: 600; color: #fff; }
         .btn-primary-custom:hover { background-color: #1d4ed8; }
         .img-ai { border-radius: 12px; border: 1px solid #334155; width: 100%; height: auto; }
+        .code-box { background: #020617; border: 1px solid #1e293b; border-radius: 8px; padding: 15px; font-family: monospace; color: #38bdf8; text-align: left; }
         .text-light-custom { color: #e2e8f0 !important; }
         .text-muted-custom { color: #94a3b8 !important; }
     </style>
@@ -28,9 +29,30 @@
         <div class="container">
             <h1 class="display-5 fw-bold text-white mb-3">Превърнете камерите си в умен AI пазач</h1>
             <p class="lead text-light-custom mb-4">Локален изкуствен интелект без облачно забавяне, без фалшиви аларми и с моментални известия в Telegram.</p>
-            <a href="#pricing" class="btn btn-primary-custom btn-lg shadow">Активирай Сега</a>
+            <a href="#install" class="btn btn-primary-custom btn-lg shadow me-2">Бърза Инсталация</a>
+            <a href="#pricing" class="btn btn-outline-light btn-lg shadow">Активирай Абонамент</a>
         </div>
     </header>
+
+    <!-- Секция Бърза инсталация и Ръководство -->
+    <section id="install" class="py-5 bg-dark">
+        <div class="container text-center">
+            <h2 class="fw-bold text-white mb-3">🚀 Инсталация с 1 Команда</h2>
+            <p class="text-muted-custom mb-4">Изпълнете тази команда във вашия Linux терминал или Docker среда:</p>
+            
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="code-box shadow">
+                        curl -sSL https://hd-vision-ai-selfguard.onrender.com/install.sh | bash
+                    </div>
+                </div>
+            </div>
+
+            <a href="docs/HD_Vision_AI_SelfGuard_Manual.pdf" target="_blank" class="btn btn-outline-info">
+                📄 Свали Ръководството (PDF Manual)
+            </a>
+        </div>
+    </section>
 
     <!-- Работен процес -->
     <section class="py-5 text-center">
@@ -57,10 +79,10 @@
         </div>
     </section>
 
-    <!-- Цени и плащане -->
+    <!-- Цени и Умни Договори -->
     <section id="pricing" class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold text-white mb-5">Изберете план & Метод на плащане</h2>
+            <h2 class="text-center fw-bold text-white mb-5">Изберете план & Плащане чрез Smart Contract</h2>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-5">
                     <div class="card card-custom p-4 text-center shadow-lg">
@@ -76,12 +98,16 @@
                         </ul>
                         
                         <hr class="border-secondary my-4">
-                        <h6 class="fw-bold text-white mb-3">Начини за плащане:</h6>
+                        <h6 class="fw-bold text-white mb-3">Методи за плащане:</h6>
                         <div class="d-grid gap-2">
-                            <!-- Замени '#' с реалните линкове към Stripe / Telegram Bot / Web3 Wallet -->
-                            <a href="https://stripe.com" target="_blank" class="btn btn-outline-light py-2">💳 Плати с Банкова Карта (Stripe)</a>
-                            <a href="https://t.me/your_bot" target="_blank" class="btn btn-outline-info py-2">🏦 Плати по Банков Път (IBAN)</a>
-                            <a href="#" class="btn btn-outline-warning py-2">🦊 Плати с Крипто (Web3 Wallet)</a>
+                            <a href="https://buy.stripe.com/your_stripe_link" target="_blank" class="btn btn-outline-light py-2">💳 Банкова Карта (Stripe)</a>
+                            
+                            <!-- Smart Contract Web3 Интеграция -->
+                            <a href="https://polygonscan.com/address/0xYourSmartContractAddressHere" target="_blank" class="btn btn-outline-warning py-2">
+                                🦊 Web3 / Smart Contract (USDT / Polygon)
+                            </a>
+                            
+                            <a href="https://t.me/your_hd_vision_bot" target="_blank" class="btn btn-outline-info py-2">🤖 Плати през Telegram Bot</a>
                         </div>
                     </div>
                 </div>
